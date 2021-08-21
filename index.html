@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <title style="color: red;">Git_1</title>
+        <meta charset="EUC-KR">
+        <script type="text/javascript" src="HelloWorld.js"></script>
+
+        <style>
+            .parent{
+                background: wheat;
+                height: 3000px;
+                width: 1200px;
+                overflow: hidden;
+                margin: 0 auto;
+            }
+
+            .parent1{
+                position: absolute;
+                color: crimson;
+                top: 90px;
+                left: 38%;
+                font-size: 30px;
+                width: 100%;
+                font-weight: bold;
+                word-break: break-all;
+            }
+
+            .parent2{
+                position: relative;
+                color: black;
+                font-size: 30px;
+                width: 100%;
+                font-weight: bold;
+                word-break: break-all;
+            }
+
+            .parent3{
+                position: relative;
+                color: black;
+                font-size: 15px;
+                width: 100%;
+                word-break: break-all;
+            }
+
+            .child{
+                height: 8%;
+                width: 100%;
+                object-fit: cover;
+            }
+
+            #btn1{
+                position: relative;
+            }
+
+            .arrList{
+                position: relative;
+                word-break: break-all;
+                width: 100%;
+            }
+        </style>
+    </head>
+
+    <body style="background: linear-gradient(to bottom, rgb(27, 27, 27), rgb(68, 68, 68));">
+        <div class="parent">
+            <img class="child" src="2.png">
+            <span class="parent1">최소외접원에 대한 정리</span>
+            <span class="parent2">
+                최소 외접원이란??
+            </span><br>
+            <span class="parent3">
+                The smallest-circle problem (also known as minimum covering circle problem,
+                bounding circle problem,
+                smallest enclosing circle problem) is a mathematical problem of computing the smallest circle that contains all of a given set of points in the Euclidean plane.
+                The corresponding problem in n-dimensional space, the smallest bounding sphere problem, is to compute the smallest n-sphere that contains all of a given set of points.
+                The smallest-circle problem was initially proposed by the English mathematician James Joseph Sylvester in 1857.
+
+                The smallest-circle problem in the plane is an example of a facility location problem (the 1-center problem) in which the location of a new facility must be chosen to provide service to a number of customers, minimizing the farthest distance that any customer must travel to reach the new facility.[3] Both the smallest circle problem in the plane, and the smallest bounding sphere problem in any higher-dimensional space of bounded dimension are solvable in worst-case linear time.
+            </span><br><br>
+
+            <input placeholder="X좌표를 입력하세요..." id="xph" />
+            <input placeholder="Y좌표를 입력하세요..." id="yph" />
+            <input placeholder="Z좌표를 입력하세요..." id="zph" /><br>
+            <div class="arrList"></div>
+            <input type="button" id="btn1" value="추가" /><br>
+            <input type="button" id="btn2" value="결과확인" />
+        </div>
+    </body>
+</html>
